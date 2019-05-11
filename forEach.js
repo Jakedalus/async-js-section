@@ -11,3 +11,14 @@ forEach(test, function(number) {
   console.log(number * 2);
 });
 
+const msg = ['my', 'forEach', 'example'];
+
+let result = "";
+forEach(msg, function(str, index, arr) {
+  if (arr.length - 1 === index) {
+    result += str + "!!!!";
+  } else {
+    result += str + " ";
+  }
+});
+console.log(result);
